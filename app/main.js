@@ -20,7 +20,7 @@ define([
   var map = new Map();
 
   var tileLyr = new VectorTileLayer({
-    url: "http://odoenet.maps.arcgis.com/sharing/rest/content/items/aa826fe4f83e4b5eb39993aa3c7b7043/resources/styles/root.json"
+    url: "https://odoenet.maps.arcgis.com/sharing/rest/content/items/aa826fe4f83e4b5eb39993aa3c7b7043/resources/styles/root.json"
   });
   map.add(tileLyr);
 
