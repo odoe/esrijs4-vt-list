@@ -16,6 +16,7 @@ define([
   Search, List) {
     
   //esriConfig.request.proxyUrl = "/proxy/proxy.php";
+  esriConfig.request.corsEnabledServers.push("maps.arcgis.com");
 
   var map = new Map();
 
