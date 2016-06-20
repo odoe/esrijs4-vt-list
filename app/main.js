@@ -15,12 +15,12 @@ define([
   VectorTileLayer,
   Search, List) {
     
-  esriConfig.request.proxyUrl = "/proxy/proxy.php";
+  //esriConfig.request.proxyUrl = "/proxy/proxy.php";
 
   var map = new Map();
 
   var tileLyr = new VectorTileLayer({
-    url: "https://odoenet.maps.arcgis.com/sharing/rest/content/items/aa826fe4f83e4b5eb39993aa3c7b7043/resources/styles/root.json"
+    url: "https://maps.arcgis.com/sharing/rest/content/items/aa826fe4f83e4b5eb39993aa3c7b7043/resources/styles/root.json"
   });
   map.add(tileLyr);
 
