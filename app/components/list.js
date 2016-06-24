@@ -67,10 +67,10 @@ define([], function() {
       
     }
     updateJsonDisplay();
-    layer.loadStyle(Object.assign({}, currentStyle));
+    layer.loadStyle(JSON.parse(JSON.stringify(currentStyle)));
   }
 
-  // createSublistContainer :: 
+  // createSublistContainer :: [String] -> HTMLElement
   function createSublistContainer(ids) {
     var list = document.createElement("ul");
     list.className = "list-group float-group";
@@ -175,7 +175,7 @@ define([], function() {
   function create(spec) {
     style = spec.style;
     layer = spec.layer;
-    currentStyle = Object.assign({}, style);
+    currentStyle = JSON.parse(JSON.stringify(style));
     var raw_ids = style.layers.map(function(lyr) {
       return lyr.id.split("/")[0];
     });
